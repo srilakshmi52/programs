@@ -1,0 +1,193 @@
+import java.util.Scanner;
+public class RockPaperScissors2 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+ 
+        // Read moves from players
+        System.out.print("Enter player 1's move (1=rock, 2=paper, 3=scissors): ");
+        int player1_Move = input.nextInt();
+        System.out.print("Enter player 2's move (1=rock, 2=paper, 3=scissors): ");
+        int player2_Move = input.nextInt();
+ 
+        // Determine winner using switch statement
+        switch (player1_Move) {
+            case 1:
+                switch (player2_Move) {
+                    case 1:
+                        System.out.println("tie");
+                        break;
+                    case 2:
+                        System.out.println("player 2 wins");
+                        break;
+                    case 3:
+                        System.out.println("player 1 wins");
+                        break;
+                    default:
+                        System.out.println("Invalid move entered");
+                        break;
+                }
+                break;
+            case 2:
+                switch (player2_Move) {
+                    case 1:
+                        System.out.println("player 1 wins");
+                        break;
+                    case 2:
+                        System.out.println("tie");
+                        break;
+                    case 3:
+                        System.out.println("player 2 wins");
+                        break;
+                    default:
+                        System.out.println("Invalid move entered");
+                        break;
+                }
+                break;
+            case 3:
+                switch (player2_Move) {
+                    case 1:
+                        System.out.println("player 1 wins");
+                        break;
+                    case 2:
+                        System.out.println("player 2 wins");
+                        break;
+                    case 3:
+                        System.out.println("tie");
+                        break;
+                    default:
+                        System.out.println("Invalid move entered");
+                        break;
+                }
+                break;
+            default:
+                System.out.println("Invalid move entered");
+                break;
+        }
+    }
+}
+ 
+17. WAP to print all natural numbers from 1 to n. - using while loop
+18. WAP to print all natural numbers in reverse (from n to 1). -     using while loop
+19. WAP to print all alphabets from a to z. - using while loop
+20. WAP to print all even numbers between 1 to 100. - using while     loop
+21. WAP to print all odd number between 1 to 100.
+22. WAP to find sum of all natural numbers between 1 to n.
+23. WAP to find sum of all even numbers between 1 to n.
+24. WAP to find sum of all odd numbers between 1 to n.
+
+
+import java.util.Scanner;
+class While Loop{
+  public static void main(String[] args){
+    int num,sum=0,digit=0;
+    Scanner sc= new Scanner(System.in);
+    System.out.println("Enter the number");
+    num=sc.nextInt();
+    while(num>0)
+    {
+      digit=num%10;
+      sum=sum+digit;
+      num=num/10;
+    }
+    System.out.print("Sum of the digit is ="+sum);
+  }
+}
+
+18.Program to print all natural numbers in reverse from n to 1
+import java.util.Scanner;
+public class num rev
+  {
+    public static void main(String args[])
+    {
+    Scanner sc = new Scanner(System.in);
+    int num;
+    System.out.println("enter the num");
+     num = sc.nextInt();
+   while(num>=1)
+     {
+       System.out.println(num);
+       num--;
+     }
+
+
+19.Program to print all alphabets from a to z
+  public class Prog19 {
+  public static void main(String[] args) {
+  
+    char ch='a';
+    while(ch>=97 && ch<=122)
+      {
+        System.out.println(""ch");
+        ch++;
+      }
+  }
+}
+
+
+
+
+    
+20.Program to print all even numbers between 1 to 100
+class Program20 {​​​​​​​
+    public static void main(String[] args) {​​​​​​​
+       int count = 2;
+       while(count<=100)
+         {​​​​​​​
+             System.out.println(count);
+           count = count+2;
+         }​​​​​​​
+    }​​​​​​​
+}​​​​​​​
+
+
+
+Program to print all natural numbers from 1 to n
+import java.util.Scanner;
+public class Main{
+    public static void main(String[]args){
+      Scanner sc = new Scanner(System.in);
+      int num ,n=1;
+      System.out.println("enter the natural number n");
+      num = sc.nextInt();
+     
+      while(num>=n)
+        
+       System.out.println("natural numbers = "+num++);
+    }
+}
+ 
+
+21.Program to print all odd number between 1 to 100.
+class Program9 {​​​​​​​
+    public static void main(String[] args) {​​​​​​​
+       int count = 1;
+       while(count<100)
+         {​​​​​​​
+             System.out.println(count);
+           count = count+2;
+         }​​​​​​​
+    }​​​​​​​
+}​​​​​​​
+
+Program to find sum of all natural numbers between 1 to n.
+import java.util.Scanner;
+class While_Loop_7{
+  public static void main(String[] args){
+    int n,i=1,sum=0;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter the n value");
+    n=sc.nextInt();
+    while(i<=n)
+    {
+      sum=sum+i;
+      i++;
+    }
+    System.out.println("addition of n naturals numbers ="+sum);
+  }
+}
+
+
+
+​
+
+ 
