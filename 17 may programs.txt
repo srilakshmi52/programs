@@ -1,0 +1,81 @@
+//program to declare and initialize the array elements 
+import java.util.Scanner;
+ 
+public class Example1 {
+  public static void main(String[] args) {
+    Scanner sc= new Scanner(System.in);
+    // int[] marks={10,20,30.4,40,50};
+    //float Temp[]={30.4f,34.5f,45,34.5f,33.0f};
+    // System.out.println(marks[0]);
+    // System.out.println(marks[1]);
+    // System.out.println(marks[2]);
+    // System.out.println(marks[3]);
+    // System.out.println(marks[4]);   
+    //int marks[] = new int[3];
+   // marks[0]=10;
+    //marks[1]=20;
+   // marks[2]=30;
+    //we can read through keyboard and we can store it in array
+      int marks[]= new int[10];
+     System.out.println("enter the elements of the array");
+    for(int i=0;i<marks.length;i++)
+      marks[i] = sc.nextInt();
+ 
+    System.out.println("the elements you entered are");
+    for(int i=0;i<marks.length;i++)
+      System.out.println(marks[i]);
+    
+      
+  }
+ 
+}
+ 
+
+2.import java.util.Scanner;
+public class Program1 {​​​​​​​
+  public static void main(String[] args) {​​​​​​​
+    Array c=new Array();
+    c.inputArray();
+  }​​​​​​​
+}​​​​​​​
+class Array {​​​​​​​
+  public void inputArray() {​​​​​​​
+    Scanner sc=new Scanner(System.in);
+    int marks[]=new int[4];
+    System.out.println("Enter the marks:");
+    for(int i=0;i<marks.length;i++) {​​​​​​​
+      marks[i]=sc.nextInt();
+    }​​​​​​​
+    System.out.println("The elements of array are:");
+    for(int i=0;i<marks.length;i++) {​​​​​​​
+     
+      System.out.println(marks[i]);
+    }​​​​​​​
+  }​​​​​​​
+}​​​​​​​
+
+//write a java program to find the max temperature in a week
+import java.util.Scanner;
+public class MaxElementMain{
+  public static void main(String[] args){
+    Scanner sc= new Scanner(System.in);
+    double Temp[]= new double[7];
+    System.out.println("enter the temperatures");
+    for(int i=0;i<7;i++){
+      Temp[i] = sc.nextDouble();
+    }
+    double max= Temp[0];
+    for(int i=0;i<7;i++){
+      if(max < Temp[i])
+        max=Temp[i];
+    }
+    System.out.println("maximum temperature is:"+ max);
+    
+    
+    
+    
+  }
+}
+ 
+
+​
